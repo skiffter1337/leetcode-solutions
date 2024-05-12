@@ -1,0 +1,7 @@
+const addTwoPromises = async function(promise1, promise2) {
+    let result = Promise.all([promise1, promise2])
+    .then(res => {
+        return res[0] + res[1]
+    })
+    return result
+};
